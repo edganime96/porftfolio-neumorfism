@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Neumorfism</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
         body{
             display: flex;
             align-items: center;
@@ -232,12 +237,23 @@
             border-radius: 10px;
             display: flex;
             align-items: center;
-            position: absolute;
+            /* position: absolute; */
             justify-content: center;
             /*top: calc(50% - 150px);
             right: calc(50% - 250px);*/
             background-color: #EFEEEE;
             box-shadow: -6px -6px 16px 1px #ffffff, 6px 6px 16px 1px #d1cdc7;
+        }
+
+        @media screen and (max-width: 580px) {
+            .card {
+                width: 200px;
+                height: 200px;
+            }
+
+            p {
+                text-align: center;
+            }
         }
     </style>
 </head>
