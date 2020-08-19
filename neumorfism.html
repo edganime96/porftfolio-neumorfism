@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>neumorfism</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #EFEEEE;
+        }
+        #profile{
+            width: 100px;
+            transition: 1s ease-in-out;
+        }
+        #profile:hover{
+            transform: scale(1.1);
+            box-shadow: none;
+        }
+        .ig{
+            width: 30px;
+            position: absolute;
+            top: 50px;  
+            left: 50px;    
+            animation-name: ig;
+            animation-duration: 10s;
+            animation-delay: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out;
+            transition: 1s ease;
+        }
+        .ig:hover{
+            transform: scale(1.5);
+            animation-play-state: paused;
+            box-shadow: none;
+        }
+        @keyframes ig{
+            from{
+                left: 50px;
+            }
+            50%{
+                left: 100px;
+            }
+            to{
+                top: 80%;
+            }
+        }
+
+        .tw{
+            width: 30px;
+            position: absolute;
+            bottom: 50px;
+            right: 50px;
+            animation-name: tw;
+            animation-duration: 10s;
+            animation-delay: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out;
+            transition: 1s ease;
+        }
+        .tw:hover{
+            transform: scale(1.5);
+            animation-play-state: paused;
+            box-shadow: none;
+        }
+        @keyframes tw{ 
+            from{
+                right: 50px;   
+            }
+            50%{
+                right: 100px;   
+            }
+            to{
+                bottom: 80%;
+            }
+        }
+        @keyframes tw2{
+            from{
+                bottom: 80%;
+            }
+            to{
+                right: 80%;
+            }
+        }
+        .fb{
+            width: 30px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            animation-name: fb;
+            animation-duration: 60s;
+            animation-delay: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out;
+            transition: 1s ease;
+        }
+        .fb:hover{
+            transform: scale(1.5);  
+            box-shadow: none;
+            animation-play-state: paused;
+        }
+        @keyframes fb{
+            from{
+                top: 10px;
+            }
+            30%{
+                top: 90%;
+            }
+            70%{
+                top: 80%;
+            }
+            to{
+                right: 80%;
+            }
+        }
+        @keyframes fb-2{
+            from{
+                bottom: 80%;
+            }
+            to{
+                top: 10px;
+            }
+        }
+        .in{
+            width: 30px;
+            position: absolute;
+            top: 120px;
+            right: 90%;
+            animation-name: in;
+            animation-duration: 60s;
+            animation-delay: 20s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            transition: 1s ease;
+        }
+        .in:hover{
+            transform: scale(1.5);
+            box-shadow: none;
+            animation-play-state: paused;
+        }
+        @keyframes in{
+            from{
+                top: 120px;
+            }
+            70%{
+                top: 120px;
+            }
+            
+            80%{
+                top: 500px;
+            }
+            to{
+                right: 30px;
+            }
+        }
+        .ws{
+            width: 30px;
+            position: absolute;
+            left: 100px;
+            bottom: 50px;
+            transition: 1s ease;
+        }
+        .ws:hover{
+            transform: scale(1.5);
+            box-shadow: none;
+            animation-play-state: paused;
+        }
+        .gh{
+            width: 30px;
+            position: absolute;
+            top: 10px;
+            right: 80px;
+            transition: 1s ease;
+            animation-name: gh;
+            animation-duration: 120s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out;
+            animation-delay: 50s;
+        }
+        .gh:hover{
+            transform: scale(1.5);
+            box-shadow: none;
+            animation-play-state: paused;
+        }
+        @keyframes gh{
+            from{
+                top: 10px;
+            }
+            30%{
+                top: 10px;
+            }
+            50%{
+                right: 90%;
+            }
+            70%{
+                right: 90%;
+            }
+            to{
+                top: 90%;
+            }
+        }
+
+        .profile{
+            border-radius: 50%;
+            padding: 5px;
+            border: 1px #FFF;
+            box-shadow: -6px -6px 16px 1px #ffffff, 6px 6px 16px 10px #d1cdc7;
+        }
+
+        h1, p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;     
+            position: absolute;
+            bottom: 50px;
+        }
+        h1{
+            top: 50px;
+        }
+        
+        .card{
+            width: 500px;
+            height: 300px;
+            border: 1px #FFF rgba(0, 0, 0, .2);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            justify-content: center;
+            /*top: calc(50% - 150px);
+            right: calc(50% - 250px);*/
+            background-color: #EFEEEE;
+            box-shadow: -6px -6px 16px 1px #ffffff, 6px 6px 16px 1px #d1cdc7;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Edgardo Marcano</h1>
+        <div class="card">
+            <a href="https://www.instagram.com/edganime96" target="_blank"><img src="img/ig.png" alt="instagram" class="profile ig" id="ig"></a>
+            <img src="img/profile.jpg" alt="profile" class="profile" id="profile">
+            <a href="http://www.twitter.com/edganime96" target="_blank"><img src="img/tw.png" alt="twitter" class="profile tw" id="tw"></a>
+            
+        </div>
+        <p><b>Web Developer : CSS maqueter : UX designer</b></p>    
+
+        <a href="#" id="llamame"><img src="img/ws.png" alt="whatsapp" class="profile ws" id="ws"></a>
+        <a href="http://www.linkedin.com/in/edganime96" target="_blank"><img src="img/in.png" alt="linkedin" class="profile in" id="in"></a>
+        <a href="http://www.facebook.com/edganime96" target="_blank"><img src="img/Fb.jpg" alt="facebook" class="profile fb" id="fb"></a>
+        <a href="http://www.github.com/edganime96"><img src="img/gh.png" alt="github" class="profile gh" id="gh"></a>
+
+        <div class="items">
+                 
+        </div>
+
+        <script src="js/animateds.js"></script>
+</body>
+</html>
